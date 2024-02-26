@@ -5,24 +5,30 @@ const InputYear = document.getElementById('movie-year');
 
 $searchButton.addEventListener('click', async function(){
     
-    try {    let url = `http://www.omdbapi.com/?apikey=${key}&t=${geradormMovieName()}${geradormMovieYear()}`;
+    try {
+        let url = `http://www.omdbapi.com/?apikey=${key}&t=${geradormMovieName()}${geradormMovieYear()}`;
 
-    const resposta = await fetch(url);
-    const dados = await resposta.json();
+        const resposta = await fetch(url);
+        let dados = await resposta.json();
+        createModal(dados)
 
-    console.log(dados)
-    if(dados.Error){
-        return notie.alert({type: 'error', text: 'Filme não encontrado'})
-    }
-    
-    overlay.classList.remove('overlay');
-    overlay.classList.add('open');
+        console.log(dados)
+
+        if(dados.Error){
+            return notie.alert({type: 'error', text: 'Filme não encontrado'})
+        }
+        
+        overlay.classList.remove('overlay');
+        overlay.classList.add('open');
+
     } catch (error) {
         notie.alert({
             type: 'error',
             text: 'Nome do filme inválido'
         })
     }
+
+
 })
 
 
@@ -41,5 +47,5 @@ function geradormMovieYear(){
     if(InputYear.value.length !== 4 || Number.isNaN(Number(InputYear.value))){
         return notie.alert({type: 'error' ,text: "Ano do filme inválido"});
     }
-    return `&${InputYear.value}`
+    return `&y=${InputYear.value}`
 }
