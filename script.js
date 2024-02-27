@@ -10,7 +10,7 @@ let movieList = JSON.parse(localStorage.getItem('movieList')) ?? [];
 $searchButton.addEventListener('click', async function(){
     
     try {
-        let url = `http://www.omdbapi.com/?apikey=${key}&t=${geradormMovieName()}${geradormMovieYear()}`;
+        let url = `https://www.omdbapi.com/?apikey=${key}&t=${geradormMovieName()}${geradormMovieYear()}`;
 
         const resposta = await fetch(url);
         let dados = await resposta.json();
