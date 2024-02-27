@@ -1,9 +1,9 @@
 :root{
-    --primary-color: #003049;
-    --light-primary: #005D8F;
-    --ligthest-color: #FDF0D5;
-    --secondary: #780000;
-    --light-secondary: #C1121F;
+    --primary-color: #660708;
+    --light-primary: #E5383B;
+    --ligthest-color: #F5F3F4;
+    --secondary: #0B090A;
+    --light-secondary: #161A1D;
 }
 
 *{
@@ -106,13 +106,14 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
 
 }
 
 #movie-list article{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 #movie-list article > img {
