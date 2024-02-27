@@ -30,4 +30,5 @@ Créditos
     - Este projeto foi criado por Paulo Ricardo Cardoso de Camargo.
 
 Licença
-Este projeto está licenciado sob a Licença MIT.
+
+    - Este projeto está licenciado sob a Licença MIT.
