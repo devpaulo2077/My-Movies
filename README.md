@@ -31,5 +31,3 @@ Créditos
 
 Licença
 Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para obter mais detalhes.
-
-Sinta-se à vontade para personalizar este README para se adequar aos detalhes e requisitos específicos do seu projeto.
