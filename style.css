@@ -50,7 +50,6 @@ header > h2 > i{
 
 
 .movie-name-wrapper{
-    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -73,13 +72,17 @@ header > h2 > i{
     background-color: var(--light-primary);
 }
 
-.movie-year-wrapper > input{
-    max-width: 5rem;    
+.movie-name-wrapper > input{
+    width: 50%;
+    
 }
 
-.movie-name-wrapper > input{
-    width: 100%;    
+.movie-year-wrapper > input{
+    width: 50%;
+
 }
+
+
 
 .movie-name-wrapper > input, .movie-year-wrapper > input{
     margin: 0 0.5rem;
